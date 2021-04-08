@@ -1,0 +1,32 @@
+{
+  "name": "matrix_digital_rain",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "rollup --config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davepkxxx/matrix_digital_rain.git"
+  },
+  "keywords": [
+    "matrix",
+    "matrix digital rain",
+    "matrix code",
+    "green rain"
+  ],
+  "author": "David Dai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davepkxxx/matrix_digital_rain/issues"
+  },
+  "homepage": "https://github.com/davepkxxx/matrix_digital_rain#readme",
+  "dependencies": {
+    "p5": "^1.3.1"
+  },
+  "devDependencies": {
+    "rollup": "^2.44.0"
+  }
+}
