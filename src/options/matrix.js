@@ -7,6 +7,7 @@ export default {
   color: 255,
   textFont: 'Yu Gothic',
   textSize: 18,
+  invaidTimesWithCreateStreamX: 10,
   symbolTextChangeRate: 0.03,
   symbolAlphaChangeDiff: -10,
   createText () {
@@ -33,8 +34,8 @@ export default {
     } else return null
   },
   createValidStreamX (env, options) {
-    const { createStreamX, validateStreamX } = options
-    for (let i = 0; i < 10; i++) {
+    const { invaidTimesWithCreateStreamX, createStreamX, validateStreamX } = options
+    for (let i = 0; i < invaidTimesWithCreateStreamX; i++) {
       const x = createStreamX(env, options)
       if (validateStreamX(x, env, options)) return x
     }
