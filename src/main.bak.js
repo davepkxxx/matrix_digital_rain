@@ -85,13 +85,13 @@ function render (symbols) {
   })
 }
 
-setup = function () {
+function setup () {
   createCanvas(window.innerWidth, window.innerHeight)
   background(0)
   textFont('Yu Gothic')
 }
 
-draw = function () {
+function draw () {
   background(0)
   // add stream
   if (frames % 5 === 0) {
