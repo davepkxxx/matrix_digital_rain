@@ -89,8 +89,8 @@ export default {
     changeSymbolColorPerTick(env, options)
     if (isHiddenSymbol(env, options)) hideSymbol(env, options)
   },
-  changeSymbolTextPerTick ({ symbol }, { changeSymbolTextRate, createText }) {
-    if (Math.random() < changeSymbolTextRate) symbol.text = createText()
+  changeSymbolTextPerTick ({ symbol }, { symbolTextChangeRate, createText }) {
+    if (Math.random() < symbolTextChangeRate) symbol.text = createText()
   },
   changeSymbolColorPerTick ({ p, symbol }, { symbolAlphaChangeDiff }) {
     const alpha = p.alpha(symbol.color) + symbolAlphaChangeDiff
