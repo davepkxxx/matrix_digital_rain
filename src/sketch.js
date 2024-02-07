@@ -16,6 +16,7 @@ export default function sketch (initalOptions) {
   } = options
 
   const maxFrames = nextStreamFrames * nextSymbolFrames
+  let frames = 0;
   let streams = []
 
   new p5(p => {
